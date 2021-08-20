@@ -64,11 +64,11 @@ function App() {
 
     Array(500).fill().forEach(addStar);
 
-    const spaceTexture = new THREE.TextureLoader().load('images/space.jpg');
+    const spaceTexture = new THREE.TextureLoader().load('space.jpg');
     scene.background = spaceTexture;
 
-    const earthTexture = new THREE.TextureLoader().load('images/earth_texture.jpg');
-    const earthNormals = new THREE.TextureLoader().load('images/earth_normals.tif');
+    const earthTexture = new THREE.TextureLoader().load('earth_texture.jpg');
+    const earthNormals = new THREE.TextureLoader().load('earth_normals.tif');
 
     const earth = new THREE.Mesh(
       new THREE.SphereGeometry(3, 32, 32),
