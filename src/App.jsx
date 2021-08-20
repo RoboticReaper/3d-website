@@ -64,11 +64,11 @@ function App() {
 
     Array(500).fill().forEach(addStar);
 
-    const spaceTexture = new THREE.TextureLoader().load('images/space.jpg');
+    const spaceTexture = new THREE.TextureLoader().load('https://imgix.elitedaily.com/uploads/image/2021/1/25/8e5c2a36-d64a-4c60-9c96-2c9aa2d65b56-gettyimages-1211293811.jpg');
     scene.background = spaceTexture;
 
-    const earthTexture = new THREE.TextureLoader().load('images/earth_texture.jpg');
-    const earthNormals = new THREE.TextureLoader().load('images/earth_normals.tif');
+    const earthTexture = new THREE.TextureLoader().load('https://www.solarsystemscope.com/textures/download/2k_earth_daymap.jpg');
+    // const earthNormals = new THREE.TextureLoader().load('images/earth_normals.tif');
 
     const earth = new THREE.Mesh(
       new THREE.SphereGeometry(3, 32, 32),
