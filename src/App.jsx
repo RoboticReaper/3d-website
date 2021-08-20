@@ -75,7 +75,6 @@ function App() {
       new THREE.SphereGeometry(3, 32, 32),
       new THREE.MeshStandardMaterial({
         map: earthTexture,
-        normalMap: earthNormals
       })
     )
 
