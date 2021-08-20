@@ -69,12 +69,13 @@ function App() {
     scene.background = spaceTexture;
 
     const earthTexture = loader.load('https://www.solarsystemscope.com/textures/download/2k_earth_daymap.jpg');
-    // const earthNormals = new THREE.TextureLoader().load('images/earth_normals.tif');
+    const earthNormals = new THREE.TextureLoader().load('images/earth_normals.tif');
 
     const earth = new THREE.Mesh(
       new THREE.SphereGeometry(3, 32, 32),
       new THREE.MeshStandardMaterial({
         map: earthTexture,
+        normapMap: earthNormals
       })
     )
 
